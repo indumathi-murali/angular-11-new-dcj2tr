@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+
+<div>
+  <button (click)="open($event)">Open</button>
+  <ejs-maps id='container' style="display:block;" [zoomSettings]='zoomSettings' [layers]='layers' 
+            [legendSettings]="legendSettings" [titleSettings] = "titleSettings"
+            (load)="load($event)">
+        </ejs-maps>
+</div>
